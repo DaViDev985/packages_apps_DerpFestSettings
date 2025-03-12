@@ -60,8 +60,7 @@ public class ScreenOffUdfpsPreferenceController extends GesturePreferenceControl
     @VisibleForTesting
     static boolean isSuggestionComplete(AmbientDisplayConfiguration config,
             SharedPreferences prefs) {
-        return !screenOffUdfpsAvailable(config)
-                || prefs.getBoolean(ScreenOffUdfpsSettings.PREF_KEY_SUGGESTION_COMPLETE, false);
+        return !screenOffUdfpsAvailable(config);
     }
 
     @Override
